@@ -8,47 +8,61 @@ body {
     margin: 0;
 }
 
-.quiz-container {
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    max-width: 100%;
     background: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 400px;
-    max-width: 100%;
+}
+
+.quiz-container {
+    padding: 20px;
 }
 
 .question {
-    padding: 20px;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.choices {
-    display: flex;
-    flex-direction: column;
+.answer-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.choice {
+.submit-btn {
     background: #007bff;
     border: 0;
     border-radius: 5px;
     color: white;
     padding: 10px;
-    margin: 10px 20px;
     cursor: pointer;
-    transition: background 0.3s;
+    width: 100%;
 }
 
-.choice:hover {
+.submit-btn:hover {
     background: #0056b3;
 }
 
-.next-btn {
-    background: #28a745;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-    margin: 20px;
-    cursor: pointer;
-    display: none;
+.status-container {
+    width: 100%;
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #ccc;
+}
+
+.message {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.health {
+    margin-bottom: 5px;
 }
